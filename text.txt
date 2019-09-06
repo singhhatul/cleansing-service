@@ -1,0 +1,1 @@
+{"actor":"News-adapter","object":"Image copyrightGetty Images\r\nLeo Tolstoy\u0027s War and Peace is in the news in India after a judge asked an activist to explain why he had a book about war in another country Vernon Gonsalves had appeared in the high court in Mumbai city on Wednesday","verb":"fetched"}

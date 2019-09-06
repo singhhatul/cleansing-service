@@ -9,7 +9,8 @@ import lombok.*;
 @Setter
 @ToString
 public class Domain {
-    private int id;
-    private String name;
-    private String category;
+    private String actor;
+    private String object;
+    private String verb;
+
 }
