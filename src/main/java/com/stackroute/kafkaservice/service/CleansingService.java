@@ -16,7 +16,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
 @Service
 public class CleansingService {
 
@@ -48,6 +47,7 @@ public class CleansingService {
 
             lemma = lemma+coreLabel.lemma()+" ";
         }
+
         KafkaTemplate.send("consumer",lemma);
 
     }
