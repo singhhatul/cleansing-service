@@ -1,8 +1,7 @@
-package com.stackroute.kafkaservice.service;
+package com.stackroute.cleansingService.service;
 
 
-import com.stackroute.kafkaservice.domain.Domain;
-import com.stackroute.kafkaservice.domain.ObjectDomain;
+import com.stackroute.cleansingService.domain.Domain;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
@@ -21,7 +20,7 @@ public class CleansingService {
     @Autowired
     KafkaTemplate<String, Domain> KafkaTemplate;
 
-    @KafkaListener(topics = "producer2", groupId = "sample-group", containerFactory = "kafkaListener")
+    @KafkaListener(topics = "producer", groupId = "sample-group", containerFactory = "kafkaListener")
     public void specialCharacterRemover(Domain domain) throws NullPointerException{
         String lemma="";
         String words=domain.getObject().getContent();

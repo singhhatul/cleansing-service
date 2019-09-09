@@ -1,4 +1,4 @@
-package com.stackroute.kafkaservice.service;
+package com.stackroute.cleansingService.service;
 
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 

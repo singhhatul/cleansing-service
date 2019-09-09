@@ -1,4 +1,4 @@
-package com.stackroute.kafkaservice;
+package com.stackroute.cleansingService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

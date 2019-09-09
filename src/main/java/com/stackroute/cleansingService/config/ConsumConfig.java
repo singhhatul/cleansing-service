@@ -1,6 +1,6 @@
-package com.stackroute.kafkaservice.config;
+package com.stackroute.cleansingService.config;
 
-import com.stackroute.kafkaservice.domain.Domain;
+import com.stackroute.cleansingService.domain.Domain;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;

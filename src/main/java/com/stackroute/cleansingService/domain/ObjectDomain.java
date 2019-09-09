@@ -1,4 +1,4 @@
-package com.stackroute.kafkaservice.domain;
+package com.stackroute.cleansingService.domain;
 
 import lombok.*;
 
