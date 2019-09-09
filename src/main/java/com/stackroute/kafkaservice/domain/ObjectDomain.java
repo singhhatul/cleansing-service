@@ -8,8 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class Domain {
-    private String actor;
-    private ObjectDomain object;
-    private String verb;
+public class ObjectDomain {
+    private String objectType;
+    private String content;
 }
