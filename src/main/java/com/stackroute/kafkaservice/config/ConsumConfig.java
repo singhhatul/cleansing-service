@@ -21,6 +21,7 @@ public class ConsumConfig {
     @Bean
     public ConsumerFactory<String, Domain> consumerFactory(){
         Map<String,Object> config = new HashMap<>();
+        // list of host:port pairs used for establishing the initial connections to the Kakfa cluster
         config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092");
         config.put(ConsumerConfig.GROUP_ID_CONFIG,"sample-group");
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);

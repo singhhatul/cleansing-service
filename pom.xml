@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.stackroute</groupId>
-	<artifactId>kafka-service</artifactId>
+	<artifactId>cleansing-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>kafka-service</name>
+	<name>cleansing-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
