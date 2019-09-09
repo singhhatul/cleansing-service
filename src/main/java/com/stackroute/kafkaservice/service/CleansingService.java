@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
 public class CleansingService {
 
     @Autowired
-    KafkaTemplate<String, String> KafkaTemplate;
+    KafkaTemplate<String, Domain> KafkaTemplate;
 
     @KafkaListener(topics = "producer2", groupId = "sample-group", containerFactory = "kafkaListener")
     public void specialCharacterRemover(Domain domain) throws NullPointerException{
@@ -45,7 +45,7 @@ public class CleansingService {
         for(CoreLabel coreLabel : coreLabelList) {
             lemma = lemma+coreLabel.lemma()+" ";
         }
-
-             KafkaTemplate.send("consumer",lemma);
+        domain.getObject().setContent(lemma);
+             KafkaTemplate.send("consumer",domain);
     }
 }

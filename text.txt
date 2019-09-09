@@ -1,1 +1,1 @@
-{"actor":"News-adapter","object":{"objectType":"article","content":"War and Peace is in the news in India after a judgebjectType asked an activist to explain why he had a book about war in another country"},"verb":"fetched"}
+{"actor":"News-adapter","object":{"objectType":"article","content":"#War and #Peace is in the news in @India after a judge asked an @activist to explain why he had a book about #war in another country"},"verb":"fetched"}
